@@ -1,2 +1,6 @@
-- name: run petclinic jar
+#This uses the jar tool to deploy the application's .jar file copied into the user's home directory
+#It also uses an ampersand at the end meaning the command will run in background mode
+#Otherwise the Ansible task wont finish
+- name: deploy petclinic jar
   shell: java -jar /home/cloud_user/petclinic.jar &
+

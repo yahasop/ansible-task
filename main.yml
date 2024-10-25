@@ -1,5 +1,5 @@
-####Main####
-#
+#Main playbook. It only set the hosts, the become parameter and the role to be used.
+#The role contains all the tasks and files.
 ---
 - hosts: petclinic
   become: yes

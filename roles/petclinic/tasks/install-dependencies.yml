@@ -1,13 +1,5 @@
-#- name: update packages
-#  apt:
-#    upgrade: dist
-
-#- name: upgrade packages
-#  apt:
-#    name: "*"
-#    state: latest
-
+#This task install JRE to run the java application. It's the only neccesary dependency
 - name: install jre
   apt:
     name: openjdk-17-jre
-    update_cache: yes
+    update_cache: yes #This will update the package list first and then installs the package

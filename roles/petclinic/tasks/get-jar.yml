@@ -1,8 +1,5 @@
-#- name: download jar from nexus
-#  get_url:
-#    url: http://localhost:8081/repository/maven-snapshots/org/springframework/samples/spring-petclinic/3.3.0-SNAPSHOT/spring-petclinic-3.3.0-20240920.001722-1.jar
-#    dest: /home/cloud_user/petclinic.jar
-#
+#This copies the .jar file located at roles/petclinic/files/ into the the specified destination.
+#No need to specify the path on source as Ansible looks for the file into said directory as it is using a role
 - name: copy the jar
   copy:
     src: spring-petclinic-3.3.0-SNAPSHOT.jar

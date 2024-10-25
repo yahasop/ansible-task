@@ -1,2 +1,4 @@
+#This was needed on the node, as it dont have this rule enabled by default
+#Just basically opens the 8080 port on the managed node
 - name: modify ufw
   shell: ufw allow 8080

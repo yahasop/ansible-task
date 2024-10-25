@@ -1,6 +1,7 @@
 #Hosts
 [petclinic]
-pet ansible_host=34.220.31.229 ansible_ssh_user=cloud_user #Worker4
+#Replace placeholders MANAGED_NODE_IP_ADDRESS and MANAGED_NODE_USER for actual values
+petclinic ansible_host=<MANAGED_NODE_IP_ADDRESS> ansible_ssh_user=<MANAGED_NODE_USER> #Worker4
 
 [local]
 control ansible_connection=local

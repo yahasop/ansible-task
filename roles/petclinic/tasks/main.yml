@@ -1,5 +1,6 @@
-#Install dependencies to run the Petclinic app
-
+#When working with roles, Ansible will look at first into main.yml named files
+#This main.yml file groups the other tasks and runs all of them.
+#For this, the import_tasks attribute is needed
 - name: install dependencies
   import_tasks: install-dependencies.yml
 
