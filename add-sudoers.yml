@@ -1,0 +1,10 @@
+---
+- hosts: petclinic
+  become: yes
+  tasks:
+    - name: add sudoers
+      lineinfile:
+        path: /etc/sudoers 
+        line: 'cloud_user ALL=(ALL) NOPASSWD: ALL' 
+        state: present 
+        validate: "visudo -cf %s"

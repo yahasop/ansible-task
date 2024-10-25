@@ -1,0 +1,13 @@
+#- name: update packages
+#  apt:
+#    upgrade: dist
+
+#- name: upgrade packages
+#  apt:
+#    name: "*"
+#    state: latest
+
+- name: install jre
+  apt:
+    name: openjdk-17-jre
+    update_cache: yes

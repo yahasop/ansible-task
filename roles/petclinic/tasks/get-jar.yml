@@ -1,0 +1,9 @@
+#- name: download jar from nexus
+#  get_url:
+#    url: http://localhost:8081/repository/maven-snapshots/org/springframework/samples/spring-petclinic/3.3.0-SNAPSHOT/spring-petclinic-3.3.0-20240920.001722-1.jar
+#    dest: /home/cloud_user/petclinic.jar
+#
+- name: copy the jar
+  copy:
+    src: spring-petclinic-3.3.0-SNAPSHOT.jar
+    dest: /home/cloud_user/petclinic.jar

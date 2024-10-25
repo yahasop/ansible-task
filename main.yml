@@ -1,0 +1,7 @@
+####Main####
+#
+---
+- hosts: petclinic
+  become: yes
+  roles:
+    - petclinic

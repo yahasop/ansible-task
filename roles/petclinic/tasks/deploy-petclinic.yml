@@ -1,0 +1,2 @@
+- name: run petclinic jar
+  shell: java -jar /home/cloud_user/petclinic.jar &

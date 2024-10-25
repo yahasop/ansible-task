@@ -1,0 +1,13 @@
+#Install dependencies to run the Petclinic app
+
+- name: install dependencies
+  import_tasks: install-dependencies.yml
+
+- name: get jar
+  import_tasks: get-jar.yml
+
+- name: modify ufw
+  import_tasks: modify-ufw.yml  
+
+- name: deploy petclinic
+  import_tasks: deploy-petclinic.yml

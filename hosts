@@ -1,0 +1,6 @@
+#Hosts
+[petclinic]
+pet ansible_host=34.220.31.229 ansible_ssh_user=cloud_user #Worker4
+
+[local]
+control ansible_connection=local
