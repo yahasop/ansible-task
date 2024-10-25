@@ -35,7 +35,8 @@ ansible-playbook main.yml
 
 ## Accessing the application
 
-The Petclinic application should now be installed on the node and ready to be accessed. Java based applications typically run at 8080 port, so accessing with the node IP and the 8080 at any browser should be enough.
+The Petclinic application should now be running on the node. Java based applications typically run at 8080 port, so accessing this way on any browser will do:
 ```
 <MANAGED_NODE_PUBLIC_IP>:8080
 ```
+Replace the placeholder with the node's IP address, and application should display.
